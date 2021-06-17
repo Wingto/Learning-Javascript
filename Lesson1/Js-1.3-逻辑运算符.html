@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--&& 与，一假则假，两真则真
+    ，  ||  或，一真则真，两假则假 -->
+
+    <!-- 非 ！ -->
+
+    <script>
+        var T = 3 < 5;
+        var T1 = 1 < 2;
+
+        var F = 3 < 1;
+        var F1 = 3 < 2;
+
+        console.log(T && T);//True
+        console.log(T && F);//False
+
+        console.log(T || F);//True
+        console.log(F || F);//False
+
+        console.log(!true);//false
+
+    </script>
+
+    <!-- &&逻辑中断 -->
+    <!-- 用布尔值参与的逻辑运算 true && false == false  -->
+    <!-- 如果前一个为真就会返回第二个表达式，如果前一个为假，就直接返回第一个 -->
+
+
+    <script>
+        console.log(11 && 23); //23
+        console.log(0 && "asd"); //0
+
+    </script>
+
+
+    <!-- || 逻辑中断 -->
+    <!-- 只要有真就会返回真的那个 -->
+    <script>
+
+        console.log(0 || 12);//12
+        console.log(12 || 0);//12
+        console.log(0 || 0 || 13 || 0); //13
+
+
+
+
+
+        var num = 0;
+        console.log(123 || num++); // == (123 || 0)
+        console.log(num);//0
+        // 因为这是逻辑中断，只要发现为真后面都不再执行
+        console.log(num || 123);//1
+    </script>
+
+
+</body>
+
+</html>
