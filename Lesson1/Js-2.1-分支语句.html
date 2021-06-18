@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- if 的语法结构 -->
+    <script>
+        /*     
+         if(条件表达式){
+                 //A
+             }
+             //B 
+             如果表达式为真就执行A，否则B
+             */
+
+        if (0 == 1) {
+
+            console.log('T');
+            alert("对的")
+        }
+        console.log("F");
+        alert("错了")
+    </script>
+
+
+    <!-- if - else - if -->
+    <!-- 利用多个条件得到多个结果 -->
+    <!-- 100-90 prefect
+90-80 great
+80-70 good
+70-60 keep -->
+
+    <script>
+
+        var your = prompt("your result is")
+        if (your > 90 && your <= 100) {
+
+            alert("Prefect")
+        } else if (your > 80 && your <= 90) {
+            alert("great")
+        } else if (your > 70 && your <= 80) {
+            alert("good")
+        } else {
+
+            alert("keep")
+        }
+    </script>
+</body>
+
+</html>

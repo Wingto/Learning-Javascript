@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     有个三表达式,且最后还会输出结果
+    条件表达式 ？ 表达式1：表达式2，如果是真就输出1，否则2 -->
+
+    <script>
+        var num = prompt("输入你认为大于10的数");
+        var result = (num > 10) ? "是" : "不是"
+        alert(result)
+    </script>
+
+    <!-- 练习：用户输入一个数，如果是小于10，就得在这个数字前面添加一个0 -->
+    <script>
+        var num1 = prompt("Input a number range from 0- 59 ")
+        var result = (num1 < 10) ? ("0" + num1) : (num1)
+        alert(result)
+
+    </script>
+</body>
+
+</html>

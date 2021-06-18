@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- switch的用法 -->
+    <!--   switc(表达式){
+
+                case value1:
+                    执行语句；
+                    break;
+                case value1:
+                    执行语句；
+                    break;
+    
+                default:
+                    执行；
+    }
+    switch中的表达式与value进行匹配，如果都不对就选择default -->
+
+    <!-- 注意switch的表达式是要与case中的value全等，无论是数值还是类型，都要一致 -->
+    <script>
+        var inputNum = prompt("input random number, please")
+        switch (Number(inputNum)) {
+
+            case 1:
+                alert("this 1");
+                break;
+            case 2:
+                alert("this 2");
+                break;
+            default:
+                alert("error, cus that is" + inputNum)
+        }
+    </script>
+</body>
+
+</html>
