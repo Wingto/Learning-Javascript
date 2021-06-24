@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function getSum(num1, num2) {
+
+            var sum = 0;
+            sum = num1 + num2;
+            console.log("总数为" + sum);
+        }
+
+        getSum(2, 4);
+    </script>
+
+    <!-- 练习 -->
+    <!-- 利用函数1-100之间的累加和 -->
+    <script>
+        function getCount(allNum) {
+            var sum = 0;
+
+            for (var i = 0; i <= allNum; i++) {
+                sum = sum + i;
+
+
+            }
+            console.log("累加了" + allNum + "的总数为：" + sum);
+        }
+
+        getCount(100)
+
+    </script>
+
+
+
+    <!-- 形参 -->
+
+    <script>
+        function cook(arg) {
+            console.log(arg);
+        }
+        // 一个
+        cook("s")
+
+        // 二个
+        cook(1, 2, 2)
+
+        // 多个
+        cook("d", "sd")
+
+    </script>
+</body>
+
+</html>
