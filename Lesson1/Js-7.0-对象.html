@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 利用对象字面量创建对象 -->
+
+    <script>
+
+        var obj = {
+
+            name: "wingto",
+            age: 25,
+            sex: "man",
+            sayhi: function () {
+                console.log("hello");
+            }
+
+        }
+
+        // 调用对象的方法
+        console.log(obj.name);
+        console.log(obj['age']);
+        //变量俩个方法
+        obj.sayhi();
+
+
+    </script>
+
+
+    <!-- 创建对象,第二种方法 -->
+
+    <script>
+        var obj = new Object();
+        obj.name = "wingto";
+        obj.age = 25;
+        obj.sayhi = function () {
+            console.log("hello");
+        }
+
+    </script>
+
+
+    <!-- 创建对象第三种方法 -->
+    <!-- 利用函数构建对象 -->
+    <!-- function 函数名(){
+    this.属性 = 值;
+    this.方法 = function (){} 
+}
+new 构造函数() -->
+
+
+    <script>
+        function Star(name, age, tech) {
+            this.name = name;
+            this.age = age;
+            this.tech = tech;
+            this.fu = function () {
+
+                console.log("we all TD");
+            }
+
+        }
+        var Wingto = new Star('Wingto', '25', 'TD');
+        console.log(Wingto.name);
+        // 构造函数首字母要大写
+        // 函数不需要填返回 return 
+        var Ragen = new Star('Ragen', '25', 'TD');
+        console.log(Ragen.tech);
+        console.log(Ragen.fu());
+
+    </script>
+
+    <!-- 遍历对象 -->
+    <script>
+
+        var obj = {
+
+            name: "wingto",
+            age: 25,
+            sex: "man"
+        }
+        for (var k in obj) {
+
+            console.log(k);//得到的是属性名
+            console.log(obj[k]);//得到属性值
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

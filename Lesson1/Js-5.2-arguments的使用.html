@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+    argument存储了所有输入函数的实参
+    以伪数组的形式输出：1.具有数据的length属性 2.按照索引的形成存储 -->
+
+
+    <script>
+
+        function fn() {
+
+            console.log(arguments);
+            console.log(arguments.length);
+            //实参长度
+
+            console.log(arguments[2]);
+            //数组元素
+
+            for (var i = 0; i < arguments.length; i++) {
+
+                a = arguments[i];
+                console.log(a);
+            }
+            //遍历每个元素
+        }
+        fn(1, 2, 3, 4, 2, 1)
+
+    </script>
+
+
+    <script>
+        // var arr = ["a","b","c","d"];
+        //var arr2 = [];
+
+        // 翻转
+        function revert() {
+
+            var arr2 = [];
+            for (var i = 0; i < arguments.length; i++) {
+                arr2[arguments.length - i] = arguments[i]
+            }
+            return console.log(arr2);
+        }
+        var arr = [1, 2, 3, 4];
+        revert(arr)
+    </script>
+
+
+    <!-- fix -->
+
+    <script>
+        function reverse(arr) {
+            var ar = [];
+            for (var i = arr.length - 1; i >= 0; i++) {
+
+                ar[ar.length] = arr[i];
+
+            }
+            return ar;
+
+        }
+
+        console.log(reverse([1, 2, 3, 4]));
+    </script>
+</body>
+
+</html>
