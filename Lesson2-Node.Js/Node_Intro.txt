@@ -1,0 +1,12 @@
+node -v
+node当前版本
+
+npm -v
+npm管理工具版本
+
+node
+进入控制台
+
+.exit
+退出
+
