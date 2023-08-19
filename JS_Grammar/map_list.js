@@ -51,10 +51,9 @@ console.log("获取index数值",data2)
 console.log("-----------------------------------------------------------")
 
 const data3 = devicesData.map((item,index)=>item[Object.keys(item)[0]].color
-//[
-//  { label: 'projector', color: '1', state: true },
-//  { label: 'projector', color: '1', state: true },
-//  { label: 'pc', color: '1', state: true }        
-//]
+// [ '1', '1', '1' ]
 )
 console.log("获取item[KEY]内的内容",data3)
+
+console.log("-----------------------------------------------------------")
+
