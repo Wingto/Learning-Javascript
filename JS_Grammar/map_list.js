@@ -1,25 +1,36 @@
 const devicesData = [
-    {
-      "projector1": {
-        "label": "projector",
-        "color": "1",
-        "state": true
-      }
-    },
-    {
-      "projector2": {
-        "label": "projector",
-        "color": "1",
-        "state": true
-      }
-    },
-    {
-      "PC": {
-        "label": "pc",
-        "color": "1",
-        "state": true
-      }
+  {
+    "Projector1":{
+      "label" : "Projector",
+      "color" : 0,
+      "state" :false,
+      "disabled": false 
     }
+},
+{
+    "Projector2":{
+      "label" : "Projector",
+      "color" : 1,
+      "state" :false,
+      "disabled": false
+    }
+},
+{
+    "PC1":{
+      "label" : "PC",
+      "color" : 0,
+      "state" :false,
+      "disabled": false
+    }
+},
+{
+    "LED1":{
+      "label" : "LED",
+      "color" : 1,
+      "state" :true,
+      "disabled": false
+  }
+}
   ];
 
   console.log("-----------------------------------------------------------")
@@ -56,4 +67,17 @@ const data3 = devicesData.map((item,index)=>item[Object.keys(item)[0]].color
 console.log("获取item[KEY]内的内容",data3)
 
 console.log("-----------------------------------------------------------")
+console.log("判断数组是否存在某个值")
+const boo2 = devicesData.includes(Object.keys(devicesData[0])[0])
+console.log(Object.keys(devicesData[0])[0])
+console.log(boo2)
 
+console.log("-----------------------------------------------------------")
+const extistInobj = devicesData.some(device => Object.keys(device)[0] === "projector1")
+
+console.log(extistInobj)
+
+console.log("-----------------------------------------------------------")
+{devicesData.map((item,index)=>(
+  console.log(item[Object.keys(item)[0]].disabled)
+  ))}
